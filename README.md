@@ -1,0 +1,82 @@
+# ModSim2020
+
+## Modelos y Simulacion 2020
+
+### Autor
+
+* __@00santiagob__
+
+## Resumen
+
+Ejercicios de Modelos y Simulacion (2020) del FaMAF - UNC (FaMAFyC)
+
+* **archivo.py** (*Aun no se hizo* - Unidad num)
+
+Para este repositorio se uso *autopep8* para el estilo de codigo, lo cual hizo que no se pueda usar funciones lambda.
+Ademas se han usado librerias como ***Numpy***, ***Scipy***, ***Matplotlib*** y ***Math*** para la realizacion de algunos ejercicios.
+
+### Temario
+
+   1. Conceptos basicos de probabilidad
+
+## Requisitos
+
+Tener instalado *__Git__* y  *__Python__* (en lo posible Python3 cualquier version).
+Ademas se recomienda tener instaladas las librerias anteriormente instaladas (Si no sabe hacerlo, mas abajo se lo explicamos).
+
+## Instrucciones
+
+Primero descargar el repositorio __analisis-numerico-2020__:
+
+1) Abrir una terminal:
+
+        git clone https://github.com/00santiagob/ModSim2020.git
+
+2) Para correr algun ejercicio entrar en algun archivo **archivo.py**.
+
+3) En la parte inferior cambiar la llamada a la funcion **ejx()** por el que deseen, donde _x_ es el numero de ejercicio. En algunos casos especificos el nombre de la funcion es de la forma **ejx_y()** donde _x_ es la misma que antes y la _y_ corresponde a los incisos de algunos ejercicios.
+
+### Como Instalar
+
+Hara falta tener instalado Git en su dispositivo, pero no es parte de este repositorio enseñarles a hacerlo, asi que queda en sus manos hacerlo.
+
+#### Python en Windows
+
+Descargar [Python 3.x.x](https://www.python.org/downloads/) de la pagina oficial.
+
+#### Python Ubuntu
+
+Abrir la terminal y correr el siguiente comando:
+
+        sudo apt install python3 python3-dev python3-pip
+        pip3 install --upgrade pip
+        sudo apt update && sudo apt upgrade
+
+#### Evitar errores
+
+Chequear que esten instaladas las librerias *Numpy*, *Matplotlib* y *SciPy*, en caso de no estarlo correr lo siguiente en la terminal (powershell en caso de usar Windows):
+
+        pip3 install numpy
+        pip3 install matplotlib
+        pip3 install scipy
+
+> **Nota:** en caso de ya tenerlos instalados es suficientes (no importa la version).
+>
+> **Errores:**
+Posiblemente en linux aparezcan errores al instalar la libreria *Matplotlib*, dado que depende de otras librerias: *libfreetype6*, *libpng12* y *libqhull*. Tambien puede que aparezcan con otros nombres similares, pero son las mismas librerias.
+>
+> **Soluciones:**
+>
+> * Error al instalar Matplotlib:
+>
+>       sudo apt install libfreetype6-dev
+>       sudo apt install pkg-config
+>       sudo apt install libpng12-dev
+>       sudo apt install pkg-config
+>       sudo apt install libqhull
+>       sudo apt update && sudo apt upgrade
+>       pip3 install matplotlib
+>
+> **Cualquier otro error se agradece que lo comenten abriendo una issue nueva.**
+>
+> **Gracias y disfruten**
