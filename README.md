@@ -1,6 +1,6 @@
 # ModSim2020
 
-## Modelos y Simulacion 2020
+## Modelos y Simulacion (2020) del FaMAF - UNC (FaMAFyC)
 
 ### Autor
 
@@ -8,9 +8,16 @@
 
 ## Resumen
 
-Ejercicios de Modelos y Simulacion (2020) del FaMAF - UNC (FaMAFyC)
+En este repositorio se haran los codigos que sean relevantes para la materia Modelos y Simulacion (2020). Dichos codigos perteneceran a los teorico y a los practicos.
 
-* **archivo.py** (*Aun no se hizo* - Unidad num)
+* Las unidades anteriores no requerian codigo.
+* **unidad3.py** (*Aun no se hizo* - Temario 3)
+* **unidad4.py** (*Aun no se hizo* - Temario 4)
+* **unidad5.py** (*Aun no se hizo* - Temario 5)
+* **unidad6.py** (*Aun no se hizo* - Temario 6)
+* **unidad7.py** (*Aun no se hizo* - Temario 7)
+* **unidad8.py** (*Aun no se hizo* - Temario 8)
+* **unidad9.py** (*Aun no se hizo* - Temario 9)
 
 Para este repositorio se uso *autopep8* para el estilo de codigo, lo cual hizo que no se pueda usar funciones lambda.
 Ademas se han usado librerias como ***Numpy***, ***Scipy***, ***Matplotlib*** y ***Math*** para la realizacion de algunos ejercicios.
@@ -18,6 +25,14 @@ Ademas se han usado librerias como ***Numpy***, ***Scipy***, ***Matplotlib*** y 
 ### Temario
 
    1. Conceptos basicos de probabilidad
+   2. Procesos de Poisson
+   3. Numeros aleatorios
+   4. El metodo de Monte Carlo
+   5. Generacion de variables aleatorias discretas
+   6. Generacion de variables aleatorias continuas
+   7. Analisis estadistico de datos simulados
+   8. Tecnicas de validacion estadistica
+   9. Cadenas de Markov
 
 ## Requisitos
 
@@ -26,7 +41,7 @@ Ademas se recomienda tener instaladas las librerias anteriormente instaladas (Si
 
 ## Instrucciones
 
-Primero descargar el repositorio __analisis-numerico-2020__:
+Primero descargar el repositorio __ModSim2020__:
 
 1) Abrir una terminal:
 
@@ -34,7 +49,7 @@ Primero descargar el repositorio __analisis-numerico-2020__:
 
 2) Para correr algun ejercicio entrar en algun archivo **archivo.py**.
 
-3) En la parte inferior cambiar la llamada a la funcion **ejx()** por el que deseen, donde _x_ es el numero de ejercicio. En algunos casos especificos el nombre de la funcion es de la forma **ejx_y()** donde _x_ es la misma que antes y la _y_ corresponde a los incisos de algunos ejercicios.
+3) En la parte inferior comentar y/o descomentar alguna funcion para usarla.
 
 ### Como Instalar
 
@@ -44,13 +59,17 @@ Hara falta tener instalado Git en su dispositivo, pero no es parte de este repos
 
 Descargar [Python 3.x.x](https://www.python.org/downloads/) de la pagina oficial.
 
-#### Python Ubuntu
+#### Python en Ubuntu
 
 Abrir la terminal y correr el siguiente comando:
 
         sudo apt install python3 python3-dev python3-pip
         pip3 install --upgrade pip
         sudo apt update && sudo apt upgrade
+
+#### Python en ALGUN-OTRO-OS
+
+Queda pendiente. Si sos usuario de algun sistema operativo distinto a los anteriormente mencionados, te pido que ayudes a completar este instructivo.
 
 #### Evitar errores
 
@@ -76,7 +95,7 @@ Posiblemente en linux aparezcan errores al instalar la libreria *Matplotlib*, da
 >       sudo apt install libqhull
 >       sudo apt update && sudo apt upgrade
 >       pip3 install matplotlib
->
-> **Cualquier otro error se agradece que lo comenten abriendo una issue nueva.**
->
-> **Gracias y disfruten**
+
+**Cualquier otro error se agradece que lo comenten abriendo una issue nueva.**
+
+Gracias y disfruten
