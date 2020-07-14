@@ -10,14 +10,27 @@
 
 En este repositorio se haran los codigos que sean relevantes para la materia Modelos y Simulacion (2020). Dichos codigos perteneceran a los teorico y a los practicos.
 
-* Las unidades anteriores no requerian codigo.
-* **unidad3.py** (*Aun no se hizo* - Temario 3)
-* **unidad4.py** (*Aun no se hizo* - Temario 4)
-* **unidad5.py** (*Aun no se hizo* - Temario 5)
-* **unidad6.py** (*Aun no se hizo* - Temario 6)
-* **unidad7.py** (*Aun no se hizo* - Temario 7)
-* **unidad8.py** (*Aun no se hizo* - Temario 8)
+En la carpeta *codigos/*:
+
+* **unidad3.py** (*Incompleto* - Temario 3)
+* **unidad4.py** (*Incompleto* - Temario 4)
+* **unidad5.py** (*Incompleto* - Temario 5)
+* **unidad6.py** (*Incompleto* - Temario 6)
+* **unidad7.py** (*Incompleto* - Temario 7)
+* **unidad8.py** (*Incompleto* - Temario 8)
 * **unidad9.py** (*Aun no se hizo* - Temario 9)
+
+> Las unidades 1 y 2 no requerian codigo.
+
+En la carpeta *codigos/Parcial/*:
+
+* **ej1.py** (*Falta corregir*)
+* **ej2.py** (*Falta corregir*)
+* **ej3.py** (*Falta corregir*)
+
+En la carpeta *codigos/TrabajoPractico/*
+
+* **TrabajoPractico.py** (*Incompleto* - Contempla los ejercicios 1 y 2)
 
 Para este repositorio se uso *autopep8* para el estilo de codigo, lo cual hizo que no se pueda usar funciones lambda.
 Ademas se han usado librerias como ***Numpy***, ***Scipy***, ***Matplotlib*** y ***Math*** para la realizacion de algunos ejercicios.
@@ -47,7 +60,7 @@ Primero descargar el repositorio __ModSim2020__:
 
         git clone https://github.com/00santiagob/ModSim2020.git
 
-2) Para correr algun ejercicio entrar en algun archivo **archivo.py**.
+2) Para correr algun ejercicio entrar en algun archivo **unidadX.py**.
 
 3) En la parte inferior comentar y/o descomentar alguna funcion para usarla.
 
