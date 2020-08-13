@@ -92,5 +92,6 @@ def ej2_ranMixto():
 
 
 if __name__ == "__main__":
-    ej_vonNeumann()
+    # ej_vonNeumann()
     # ej_ranMixto()
+    ej2_ranMixto()
