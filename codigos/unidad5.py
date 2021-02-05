@@ -386,21 +386,32 @@ def Rechazo_X(p, q, c):
 
 def composicion1():
     U = random()
-    if U < alfa:
-        simular X1 # Generar X1
-        return X1
-    else:
-        simular X2 # Generar X2
-        return X2
+    if U < alfa: # Generar X1
+        return int(random() * n/2) + 1
+    else: # Generar X2
+        return int(random() * n/2) + n/2 + 1
 
 ###################
 # Metodo de Alias #
 ###################
 
+# Se hacen calculos a mano para obtener las probabilidades que comparamos con U
+
 def alias(): # No me convencio del Teorico
+    # Si X toma valores em {1, 2, 3, 4} ==> n = 4
     U = random()
-    I = int(U * 4) + 1
-    return XI
+    k = 3 # n-1 
+    XI = int(U * k) + 1
+    # n-1 condicionales: X1, X2, ... , Xn-1
+    if XI == 1:
+        if U < 5/8:   return 1
+        else:         return 3
+    elif XI == 2:
+        if U < 9/16:  return 4
+        else:         return 2
+    else: # XI == 3
+        if U < 11/16: return 1
+        else:         return 2
 
 if __name__ == "__main__":
     # ej_CompTiempos1()
