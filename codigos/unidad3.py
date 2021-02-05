@@ -187,7 +187,9 @@ def hiperplanos():
     plt.plot(secuencia[0:N],secuencia[1:N+1],'b.')
     plt.show()
 
-# Generadores congruenciales lineales combinados
+##################################################
+# Generadores congruenciales lineales combinados #
+##################################################
 
 def ej_congruencial():
     u1 = 3
@@ -230,7 +232,7 @@ def ej2_congruencial():
     sec1, sec2, sec3 = np.empty(N+1,float), np.empty(N+1,float), np.empty(N+1,float)
     M1 = 2**31-85
     M2 = 2**31-249
-    M = M1  #se puede elegir M2 también.
+    M = M1  # se puede elegir M2 también.
     semilla1 = 1000
     semilla2 = 1000
     u1 = semilla1
@@ -256,7 +258,9 @@ def ej2_congruencial():
     plt.plot(sec3[0:N],sec3[1:N+1],'k.')
     plt.show()
 
-# Mersenne Twister de la biblioteca de Python
+###############################################
+# Mersenne Twister de la biblioteca de Python #
+###############################################
 
 def ej_Mersenne_Twister():
     N=10000
