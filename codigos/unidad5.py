@@ -202,7 +202,7 @@ def ej_CompTiempos3():
         mycode = "Binomial2(15,"+str(p/n)+")"
         bin2[p] = timeit(mycode, globals = globals(), number = N)
         t_riesgo = tasas_riesgo_binomial(15,p/n) # t_riesgo es una lista
-        mycode = "Binomial_TR(15,"+str(p/n)+", t_riesgo)"
+        mycode = "Binomial_TR(15,"+str(p/n)+","+str(t_riesgo)+")"
         bin3[p] = timeit(mycode, globals = globals(), number = N)
     fig, ax = plt.subplots(figsize = (15,4))
     ax.plot(bin1, 'r', label = 'Binomial normal')
@@ -384,7 +384,7 @@ def Rechazo_X(p, q, c):
 # Metodo de Composicion #
 #########################
 
-def composicion1():
+def composicion1(n, alfa):
     U = random()
     if U < alfa: # Generar X1
         return int(random() * n/2) + 1
