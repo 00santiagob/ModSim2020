@@ -1,4 +1,19 @@
-import random
+from random import random
+
+def do():
+    U = random()
+    if U < 0.5:
+        W = random() + random()
+        return (W >= 1)
+    else:
+        W = random() + random() + random()
+        return (W >= 1)
 
 if __name__ == "__main__":
-    pass
+    ns = [100, 1000, 10000, 100000, 1000000]
+    for n in ns:
+        k = 0
+        for _ in range(n):
+            k += do()
+        k /= n
+        print(k)
