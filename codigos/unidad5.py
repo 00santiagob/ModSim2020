@@ -52,7 +52,7 @@ def ej_CompTiempos1():
         no_ordenados[u] = timeit(mycode, number = 100000, globals = globals())
         mycode = "TInversa_ordenados("+str(u/n)+")"
         ordenados[u] = timeit(mycode, number = 100000, globals = globals())
-    fig, ax = plt.subplots(figsize = (15,3))
+    _, ax = plt.subplots(figsize = (15,3))
     ax.plot(no_ordenados, 'r', label = 'sin ordenar')
     ax.plot(ordenados, 'b', label = 'ordenados')
     ax.set_xticks([i for i in range(0,101,20)])
@@ -84,7 +84,7 @@ def udiscreta3(m,k):
     U = random()
     return int(U * (k-m+1)) + m
 
-# Permutacion añeatoria de un conjunto de cardinal N
+# Permutacion aleatoria de un conjunto de cardinal N
 
 def permutacion1(a): # a = [a[0], a[1], ... , a[N-1]]
     N = len(a)
@@ -158,7 +158,7 @@ def ej_CompTiempos2():
         bin1[p] = timeit(mycode, globals = globals(), number = N)
         mycode = "Binomial2(15,"+str(p/n)+")"
         bin2[p] = timeit(mycode, globals = globals(), number = N)
-    fig, ax = plt.subplots(figsize = (15,4))
+    _, ax = plt.subplots(figsize = (15,4))
     ax.plot(bin1, 'r', label = 'Binomial normal')
     ax.plot(bin2, 'b', label = 'Binomial selectiva')
     ax.set_xlabel('p')
@@ -204,7 +204,7 @@ def ej_CompTiempos3():
         t_riesgo = tasas_riesgo_binomial(15,p/n) # t_riesgo es una lista
         mycode = "Binomial_TR(15,"+str(p/n)+","+str(t_riesgo)+")"
         bin3[p] = timeit(mycode, globals = globals(), number = N)
-    fig, ax = plt.subplots(figsize = (15,4))
+    _, ax = plt.subplots(figsize = (15,4))
     ax.plot(bin1, 'r', label = 'Binomial normal')
     ax.plot(bin2, 'b', label = 'Binomial selectiva')
     ax.plot(bin3, 'g', label = 'Binomial Tasas de riesgo')
@@ -257,7 +257,7 @@ def ej_CompTiempos4():
         metodo1[p] = timeit("geom1("+str(p/n)+")", globals = globals(), number = 10000)
         metodo2[p] = timeit("geom2("+str(p/n)+")", globals = globals(), number = 10000)
         metodo3[p] = timeit("geom3("+str(p/n)+")", globals = globals(), number = 10000)
-    fig, ax1 = plt.subplots(figsize = (15,3))
+    _, ax1 = plt.subplots(figsize = (15,3))
     ax1.plot(metodo1, 'r', label = 'Transformada Inversa')
     ax1.plot(metodo2, 'b', label = 'int(log(1-U)/log(1-p)) + 1')
     ax1.plot(metodo3, 'g', label = 'Simulando Bernoullis')
@@ -348,7 +348,7 @@ def ej_CompTiempos5():
         metodo_TI.append( timeit("Poisson("+str(lamda)+")", globals = globals(), number = 10000))
         metodo_TIordenado.append( timeit("Poisson_ordenado("+str(lamda)+")", globals = globals(), number = 10000))
         metodo_exp.append( timeit("Poisson_con_exp("+str(lamda)+")", globals = globals(), number = 10000))
-    fig, [ax1, ax2] = plt.subplots(nrows = 1, ncols = 2, figsize = (15,4))
+    _, [ax1, ax2] = plt.subplots(nrows = 1, ncols = 2, figsize = (15,4))
     ax1.plot(metodo_TI[:100], 'b', label = 'Transformada inversa')
     ax1.plot(metodo_TIordenado[:100], 'g', label = 'Probs ordenadas')
     ax1.plot(metodo_exp[:100], 'r', label = 'con exponenciales')
