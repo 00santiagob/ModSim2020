@@ -5,7 +5,7 @@
 from numpy import zeros, exp, log
 import numpy as np
 from math import factorial
-from random import random, uniform
+from random import random
 
 ######################################
 # Tecnicas de Validacion Estadistica #
@@ -247,7 +247,7 @@ def rangos(n, m, r):
             p = (n * rangos(n-1, m, r-n-m) + m * rangos(n, m-1, r)) / (n+m)
     return p
 
-def suma_rangos_pvalor(r, Nsim):
+def suma_rangos_pvalor(n, m, r, Nsim):
     """
     H0: X = [x1, x2,..., xn]; Y = [y1, y2,..., ym] provienen de la misma distribucion F
     ==> consideramos: y1 = x_n+1, ... , ym = x_n+m

@@ -40,7 +40,7 @@ def Media_Muestral_X_interv(z_alfa_2, L): # z_alfa_2 = z(alfa/2)
     'Confianza = (1 - alfa)%, amplitud del intervalo: L'
     d = L / (2 * z_alfa_2)
     Media = simular X # X(1)
-    Squad, n = 0, 1 # Scuad = S^2(1)
+    Scuad, n = 0, 1 # Scuad = S^2(1)
     while n <= 100 or sqrt(Scuad/n) > d:
         n += 1
         simular X
