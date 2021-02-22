@@ -60,19 +60,19 @@ def chi_cuadrado():
     k = 6
     lamda_sombrero = 2.9
     t0 = 19.887012
-    datos = zeros(n, int) # Muestras
-    N = zeros(k, int) # Frecuencias observadas
-    p = zeros(k, float) # p(sim) - Probabilidades p_sub_i
     pvalor = 0
     for _ in range(Nsim):
+        datos = zeros(n, int) # Muestras
+        N = zeros(k, int) # Frecuencias observadas
+        p = zeros(k, float) # p(sim) - Probabilidades p_sub_i
         # Genera la muestra de tamaño 30 con distribucion de Poisson
         for j in range(n):
             datos[j] = Poisson(lamda_sombrero)
         # Genera las frecuencias observadas
         N *= 0
         for observacion in datos:
-            if observacion < k-1:
-                N[observacion] += 1
+            if observacion <= k-1:
+                N[observacion-1] += 1
             else:
                 N[k-1] += 1
         # Calcula lamda(sim): como lamda es desconocido lo estimamos con los datos de la muestra
