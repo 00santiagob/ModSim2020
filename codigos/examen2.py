@@ -1,6 +1,6 @@
 # Modelos y Simulacion (2020)
 # Examen Final (23/2/2021)
-# Alumno: Santiago Alberto Balog
+# Autor: 00santiagob
 
 from timeit import timeit as timeit
 from random import random, expovariate
